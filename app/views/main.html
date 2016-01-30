@@ -1,1 +1,7 @@
-<p>Home page</p>
+<form role="form">
+  <div class="form-group">
+    <label for="text">Search tag:</label>
+    <input type="text" class="form-control" ng-model="tag">
+  </div>
+  <button type="submit" class="btn btn-default" ng-click="search(tag)">Submit</button>
+</form>
