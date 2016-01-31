@@ -1,0 +1,10 @@
+<div class="row card-deck-wrapper card-deck">
+    <div class="card col-sm-6" ng-repeat="item in items">
+      <img class="card-img-top" ng-src={{item.media.m}} alt="Card image cap">
+      <div class="card-block text-xs-center">
+        <h4 class="card-title">{{item.title}}</h4>
+        <p class="card-text">{{item.tags}}</p>
+        <p class="card-text"><small class="text-muted">{{item.published | date : 'MMMM d yyyy'}}</small></p>
+      </div>
+    </div>
+</div>

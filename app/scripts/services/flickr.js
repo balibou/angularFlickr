@@ -12,17 +12,16 @@ angular.module('angularFlickrApp')
     });
 
     return {
-      search: function(query) {
+      search: function(tag) {
         var q = $q.defer();
         photos.load({
-          tags: query
+          tags: tag
         }, function(resp) {
           q.resolve(resp);
         }, function(err) {
           q.reject(err);
-        })
-        console.log(q.promise);
+        });
         return q.promise;
       }
-    }
+    };
   });
