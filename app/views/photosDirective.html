@@ -1,5 +1,5 @@
 <div class="row card-deck-wrapper card-deck">
-    <div class="card col-sm-6" ng-repeat="item in items">
+    <div class="card col-sm-6" ng-repeat="item in items | limitTo:numLimit">
       <img class="card-img-top" ng-src={{item.media.m}} alt="Card image cap">
       <div class="card-block text-xs-center">
         <h4 class="card-title">{{item.title}}</h4>

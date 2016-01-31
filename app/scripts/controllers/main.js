@@ -14,4 +14,5 @@ angular.module('angularFlickrApp')
     $scope.search = function() {
       search($scope.tag);
     };
+    $scope.numLimit = 5;
   });
